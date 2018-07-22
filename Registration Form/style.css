@@ -9,7 +9,7 @@ body {
 }
 
 #Mobile:valid + .num-invalid:after{
-  content: "🗸";
+  content: "✔";
 }
 
 
@@ -18,6 +18,10 @@ h1 {
   font-size: 5em;
 }
 
+input {
+  border-radius: 5px;
+  font-size: 1.1em;
+}
 
 
 
