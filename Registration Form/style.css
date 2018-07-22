@@ -18,11 +18,19 @@ h1 {
   font-size: 5em;
 }
 
+<<<<<<< HEAD
 input,textarea {
   border-radius: 5px;
   font-size: 1.1em;
   padding: 10px, 20px;
 }
+||||||| merged common ancestors
+=======
+input {
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+>>>>>>> 28b014fa1f6752228447051dd390d0a17a96aee6
 
 
 
