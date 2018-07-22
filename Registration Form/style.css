@@ -15,6 +15,7 @@ body {
 
 h1 {
   text-align: center;
+<<<<<<< HEAD
   font-size: 5em;
 }
 
@@ -73,4 +74,67 @@ input {
     padding: 5px;
   }
 
+||||||| merged common ancestors
+=======
+  font-size: 5em;
+}
+
+
+.gender {
+  margin-top: 10px;
+}
+
+fieldset {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px, 20px;
+}
+@media screen and (max-width:425px) {
+  h1 {
+    font-size: 11vw;
+  }
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .radio{
+    display: block;
+  }
+
+
+
+
+  .radio input {
+    width: auto;
+  }
+
+  radio label {
+    width: 50%;
+  }
+
+  .input-field {
+    padding: 5px 10px;
+  }
+
+  .phonenumber {
+    display: flex;
+  }
+  #Mobile {
+    width:85%;
+  }
+
+  .num-invalid {
+    width: 15%;
+  }
+
+  input, textarea {
+    padding: 5px;
+  }
+
+>>>>>>> b7342cbaa4ff257e3be2b62d20d3cfa90dc56add
 }
