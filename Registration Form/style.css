@@ -1,5 +1,7 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #00e7ff0f;
+  font-size: 1.2em;
 }
 
 #Mobile:invalid + .num-invalid:after{
@@ -10,7 +12,65 @@ body {
   content: "🗸";
 }
 
+
 h1 {
-  font-family: 'Nunito', sans-serif;
   text-align: center;
+  font-size: 5em;
+}
+
+
+
+
+fieldset {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px, 20px;
+}
+@media screen and (max-width:500px) {
+  h1 {
+    font-size: 11vw;
+  }
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .radio{
+    display: block;
+  }
+
+
+
+
+  .radio input {
+    width: auto;
+  }
+
+  radio label {
+    width: 50%;
+  }
+
+  .input-field {
+    padding: 5px 10px;
+  }
+
+  .phonenumber {
+    display: flex;
+  }
+  #Mobile {
+    width:85%;
+  }
+
+  .num-invalid {
+    width: 15%;
+  }
+
+  input, textarea {
+    padding: 5px;
+  }
+
 }

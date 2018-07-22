@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -21,18 +23,23 @@
         </div>
         <div class="input-field">
           <label for="Address">Address</label>
-          <textarea id="Address" name="Address" rows="5"></textarea>
+          <textarea id="Address" name="Address"></textarea>
         </div>
         <div class="input-field">
           <label for="Mobile">Mobile Number</label>
-          <input type="tel" id="Mobile" name="Mobile Number" maxlength="10" pattern="[0-9]{10}" placeholder="9999999999">
-          <span class="num-invalid"></span>
+          <div class=".phonenumber">
+            <input type="tel" id="Mobile" name="Mobile Number" maxlength="10" pattern="[0-9]{10}" placeholder="9999999999">
+            <span class="num-invalid">
+          </div>
+          </span>
         </div>
         <div class="input-field">
           <label for="DOB">Date of birth</label>
           <input type="date" id="DOB" name="bday" min="1999-01-01" max="2017-12-31">
         </div>
-        <div class="input-field radio">
+        <label class="input-field gender" for="radio">Gender</label>
+        <div id="radio" class="input-field radio">
+
           <label>
             <input type="radio" name="sex" value="Male" checked>
             Male
@@ -76,10 +83,23 @@
         </div>
 
         <div class="form-field">
-          <label for=""></label>
-          <input type="file" name="file">
+          <label for="Resume"></label>
+          <input type="file" id="Resume" name="file">
         </div>
       </fieldset>
+      <fieldset>
+        <div class="form-field">
+          <label for="declaration">
+            <input type="checkbox" name="checkbox">
+            I here by declare that all the details provided above are genuine upto my knowledge.
+          </label>
+        </div>
+      </fieldset>
+
+              <div class="submit">
+                <button type="submit" name="button">submit</button>
+              </div>
+
     </form>
 
   </body>
