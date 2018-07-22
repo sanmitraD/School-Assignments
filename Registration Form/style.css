@@ -9,7 +9,7 @@ body {
 }
 
 #Mobile:valid + .num-invalid:after{
-  content: "🗸";
+  content: "✔";
 }
 
 
@@ -18,6 +18,11 @@ h1 {
   font-size: 5em;
 }
 
+input,textarea {
+  border-radius: 5px;
+  font-size: 1.1em;
+  padding: 10px, 20px;
+}
 
 
 
@@ -25,9 +30,7 @@ fieldset {
   margin-top: 10px;
 }
 
-input {
-  padding: 10px, 20px;
-}
+
 @media screen and (max-width:800px) {
   h1 {
     font-size: 11vw;
@@ -42,9 +45,6 @@ input {
   .radio{
     display: block;
   }
-
-
-
 
   .radio input {
     width: auto;
