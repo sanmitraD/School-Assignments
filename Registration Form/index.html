@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form class="Form" action="index.html" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="input-field">
+          <label for="First-Name">First Name</label>
+          <input type="text" id="First-Name" maxlength="10" name="First-Name" placeholder="First Name">
+        </div>
+        <div class="input-field">
+          <label for="Last-Name">Last Name</label>
+          <input type="text" id="Last-Name" maxlength="10" name="Last Name" placeholder="Last Name">
+        </div>
+        <div class="input-field">
+          <label for="Address">Address</label>
+          <textarea id="Address" name="Address" rows="5"></textarea>
+        </div>
+        <div class="input-field">
+          <label for="Mobile">Mobile Number</label>
+          <input type="tel" id="Mobile" name="Mobile Number" maxlength="10" pattern="[0-9]{10}" placeholder="9999999999">
+          <span class="num-invalid"></span>
+        </div>
+        <div class="input-field">
+          <label for="DOB">Date of birth</label>
+          <input type="date" id="DOB" name="bday" min="1999-01-01" max="2017-12-31">
+        </div>
+        <div class="input-field radio">
+          <label>
+            <input type="radio" name="sex" value="Male" checked>
+            Male
+          </label>
+          <label>
+            <input type="radio" name="sex" value="Female">
+            Female
+          </label>
+          <label>
+            <input type="radio" name="sex" value="Other">
+            Other
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Signup Information</legend>
+        <div class="input-field">
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="email">
+        </div>
+        <div class="input-field">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="password" value="">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+
+        <div class="form-field">
+          <label for="Branch">Branch</label>
+          <input list="Branch" id="Branch" name="list">
+          <datalist id="Branch">
+            <option value="CSE">
+            <option value="ECE">
+            <option value="EEE">
+            <option value="Civil">
+            <option value="Mechanical"></option>
+          </datalist>
+        </div>
+
+        <div class="form-field">
+          <label for=""></label>
+          <input type="file" name="file">
+        </div>
+      </fieldset>
+    </form>
+
+  </body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#Mobile:invalid + .num-invalid:after{
+  content: "❌";
+}
+
+#Mobile:valid + .num-invalid:after{
+  content: "🗸";
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
